@@ -1,10 +1,7 @@
-﻿using System;
-using iText.Kernel.Pdf.Canvas.Parser.Listener;
+﻿using iText.Kernel.Pdf;
 using iText.Kernel.Pdf.Canvas.Parser;
-using iText.Kernel.Pdf;
+using iText.Kernel.Pdf.Canvas.Parser.Listener;
 using System.Reflection;
-using static iText.Forms.PdfSigFieldLock;
-using System.Net.WebSockets;
 using System.Text;
 
 
