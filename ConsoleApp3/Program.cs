@@ -50,11 +50,12 @@ namespace ConsoleApp3
                         //var aa = locationResult[i + aaa.Length-2];
                         var location = locationResult[i+ aaa.Length-1].GetLocation();
 
-                       // Console.WriteLine(location.GetStartLocation());
-                        Console.WriteLine(location.GetEndLocation());
-                        Console.WriteLine(location.GetCharSpaceWidth());
-                        Console.WriteLine(location.DistPerpendicular());
-                        Console.WriteLine(location.DistParallelEnd());
+                        // Console.WriteLine(location.GetStartLocation());
+                        var EndLocation = location.GetEndLocation();
+                        Console.WriteLine("X:{0}, Y:{1}, Z:{2}", EndLocation.Get(0), EndLocation.Get(1), EndLocation.Get(2));
+                        Console.WriteLine("CharSpaceWidth:{0}", location.GetCharSpaceWidth());
+                        Console.WriteLine("DistPerpendicular:{0}", location.DistPerpendicular());
+                        Console.WriteLine("DistParallelEnd:{0}", location.DistParallelEnd());
                         
                         break;
                     }
